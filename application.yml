@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: 32-MicroServices-GreetAPI
+  boot:
+    admin:
+       client:
+          url: http://localhost:1111
+server:
+     port: 9091
+management:
+      endpoints:
+        web:
+          exposure:
+            include: "*"
+      endpoint:
+        health:
+          show-details: always
